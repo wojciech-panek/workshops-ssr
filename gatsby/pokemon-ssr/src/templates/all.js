@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Helmet } from 'react-helmet';
+import SEO from '../components/seo';
 
 const IndexPage = ({ pageContext: { data }}) => (
   <div style={{ textAlign: 'center' }}>
-    <Helmet title="Homepage - Pokemon App" />
+    <SEO title="Homepage - Pokemon App" />
     <h1>Catch 'Em All</h1>
     <div>
       {data.map((item) =>
